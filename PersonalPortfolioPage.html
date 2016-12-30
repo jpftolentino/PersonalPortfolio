@@ -20,9 +20,21 @@ Date: 12/29/2016
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		
 	<style>
-		.btn{
-			font: black;
+		.thumbnails {
+			text-align:center;
 		}
+
+		.thumbnails > li {
+			display: inline-block;
+			*display:inline; /* ie7 fix */
+			float: none; /* this is the part that makes it work */
+		}
+		
+		#home{
+			background-color: red;	
+		}
+		
+		
 	</style>
 </head>
 
@@ -30,17 +42,44 @@ Date: 12/29/2016
 
 	<!--  I can access all of the portfolio webpage's content just by scrolling -->
 	
-	<div id="home" class="text-center">
+	<div id="home" class="text-center container container-color">
 			<h1>JpfTolentino</h1>
-			<button type="submit" class="btn btn-primary"><a href="https://github.com/jpftolentino" target='_blank'>Github</a></button>
-			<button type="submit" class="btn btn-primary">Linkedin</button>
-			<button type="submit" class="btn btn-primary">freeCodeCamp</button>
+		<div class="row">
+			<a href="https://github.com/jpftolentino" class="btn btn-primary" target='_blank'>Github</a></button>
+			<a href="https://ca.linkedin.com/in/john-tolentino-333751118" class="btn btn-primary" target='_blank'>Linkedin</a></button>
+			<a href="https://www.freecodecamp.com/jpftolentino" class="btn btn-primary" target='_blank'>freeCodeCamp
+</a></button>
+		</div>
 	</div>
 	
 	
-	<div id="portfolio" class="text-center">
+	<div id="portfolio" class="text-center container">
 		<h1>Portfolio</h1>
+		
+		<div class="row">
+			<div class="col-md-4">
+				<a href="https://www-cdn.jtvnw.net/images/twitch_logo3.jpg" class="thumbnail">
+					<img src="https://www-cdn.jtvnw.net/images/twitch_logo3.jpg" alt="Twitch.tv Image">
+				</a>		
+			</div>
+			
+			<div class="col-md-4">
+				<a href="https://www-cdn.jtvnw.net/images/twitch_logo3.jpg" class="thumbnail">
+					<img src="https://www-cdn.jtvnw.net/images/twitch_logo3.jpg" alt="Twitch.tv Image">
+				</a>
+			</div>
+			
+			<div class="col-md-4">
+				<a href="https://www-cdn.jtvnw.net/images/twitch_logo3.jpg" class="thumbnail">
+					<img src="https://www-cdn.jtvnw.net/images/twitch_logo3.jpg" alt="Twitch.tv Image">
+				</a>
+			</div>
+											
+		</div>
+		
+		
 	</div>
+	
 	
 	<div id="about" class="text-center">
 		<h1>About</h1>
