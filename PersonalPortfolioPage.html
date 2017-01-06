@@ -3,6 +3,7 @@ Author: John Paul F. Tolentino
 Date: 12/29/2016
 -->
 
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -34,15 +35,39 @@ Date: 12/29/2016
 			background-color: red;	
 		}
 		
-		
+		body { 
+			padding-top: 70px; 
+		}
 	</style>
 </head>
 
-<body>
+<body id="page-top">
 
-	<!--  I can access all of the portfolio webpage's content just by scrolling -->
-	
-	<div id="home" class="text-center container container-color">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+	<!-- Nav buttons that take you directly to the content selected -->
+    <a class="navbar-brand" href="#page-top">JpfTolentino</a>
+    
+    <!-- <div=class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
+		<ul class="nav navbar-nav navbar-right">
+			<li class="page-scroll">
+				<a href="#portfolio">Portfolio</a>
+			</li>
+			<li class="page-scroll">
+				<a href="#about">About</a>
+			</li>
+			<li class="page-scroll">
+				<a href="#contact">Contact</a>
+			</li>
+		</ul>
+	</div>
+  </div>
+</nav>
+
+	<!-- Social Media buttons -->
+	<div id="home" class="text-center container-color">
+		<hr class="star-light">
 			<h1>JpfTolentino</h1>
 		<div class="row">
 			<a href="https://github.com/jpftolentino" class="btn btn-primary" target='_blank'>Github</a></button>
@@ -52,51 +77,45 @@ Date: 12/29/2016
 		</div>
 	</div>
 	
-	
-	<div id="portfolio" class="text-center container">
+<section id="portfolio">	
+	<!-- Portfolio  Section-->
+	<div class="text-center container">
 		<h1>Portfolio</h1>
-		
+		<!-- I can see thumbnail images of different projects the portfolio creator has built -->
+		<!-- Fix size and resolution of thumbnails -- Use 3 thumbnails for now and add more when you create projects -->
 		<div class="row">
 			<div class="col-md-4">
-				<a href="https://www-cdn.jtvnw.net/images/twitch_logo3.jpg" class="thumbnail">
+				<a href="https://www-cdn.jtvnw.net/images/twitch_logo3.jpg" class="thumbnail"> 
 					<img src="https://www-cdn.jtvnw.net/images/twitch_logo3.jpg" alt="Twitch.tv Image">
 				</a>		
-			</div>
-			
+			</div>	
 			<div class="col-md-4">
 				<a href="https://www-cdn.jtvnw.net/images/twitch_logo3.jpg" class="thumbnail">
-					<img src="https://www-cdn.jtvnw.net/images/twitch_logo3.jpg" alt="Twitch.tv Image">
+					<img src="https://s.ytimg.com/yts/img/yt_1200-vfl4C3T0K.png" alt="Youtube Image">
 				</a>
 			</div>
-			
 			<div class="col-md-4">
 				<a href="https://www-cdn.jtvnw.net/images/twitch_logo3.jpg" class="thumbnail">
-					<img src="https://www-cdn.jtvnw.net/images/twitch_logo3.jpg" alt="Twitch.tv Image">
+					<img src="http://blog.addthiscdn.com/wp-content/uploads/2015/11/logo-facebook.png" alt="Facebook Image">
 				</a>
-			</div>
-											
+			</div>							
 		</div>
-		
-		
 	</div>
-	
-	
-	<div id="about" class="text-center">
+</section>
+
+<!-- About Section -->
+<section id="about">	
+	<div class="text-center">
 		<h1>About</h1>
 	</div>
+</section>
 	
-	<div id="contactMe"  class="text-center">
+<!-- Contact Me Section -->
+<section id="contact">	
+	<div class="text-center">
 		<h1>Contact Me</h1>
 	</div>
-	
-
-	
-	<!-- I can click different buttons that will take me to the portfolio creator's different social media pages. -->
-	
-	<!-- I can see thumbnail images of different projects the portfolio creator has built -->
-	
-	<!-- I navigate to different sections of the webpage by clicking buttons in the navigation. -->
+</section>
 
 </body>
-
 </html>
